@@ -9,6 +9,8 @@ RUN dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-re
     dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo && \
     dnf clean all
 
-RUN dnf install -y steam-noruntime && \
+RUN dnf install -y steam && \
     dnf clean all
 
+RUN dnf install -y steam-noruntime && \
+    dnf clean all
